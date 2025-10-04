@@ -5,9 +5,16 @@ namespace Tyuiu.RadchenkoAV.Sprint1.Task6.V7.Lib
     {
         public string DeleteLastLetter(string value)
         {
-            value = value.Replace(" ", "");
-            value = value.Replace("*", "");
-            return value; 
+            string[] words = value.Split(' ');
+            for (int i = 0; i < words.Length; i++)
+            {
+                if (words[i].Length > 0)
+                {
+                    words[i] = words[i].Substring(0, words[i].Length - 1);
+                }
+            }
+
+            return string.Join(" ", words);
 
         }
     }

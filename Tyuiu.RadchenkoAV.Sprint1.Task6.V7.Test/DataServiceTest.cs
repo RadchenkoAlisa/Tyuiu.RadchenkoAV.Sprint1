@@ -7,10 +7,10 @@ namespace Tyuiu.RadchenkoAV.Sprint1.Task6.V7.Test
         [TestMethod]
         public void ValidExpression()
         {
-            string strTest = "1 + 2 + 3";
+            string strTest = "hello world";
             DataService ds = new DataService();
-            string res = ds.WorkWithText(strTest);
-            string wait = "123";
+            string res = ds.DeleteLastLetter(strTest);
+            string wait = "hell worl";
             Assert.AreEqual(wait, res);
         }
     }
