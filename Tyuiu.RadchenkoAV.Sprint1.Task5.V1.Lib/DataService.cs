@@ -5,11 +5,8 @@ namespace Tyuiu.RadchenkoAV.Sprint1.Task5.V1.Lib
     {
         public int DistanceBetweenDots(double x1, double y1, double x2, double y2)
         {
-            double x1 = Convert.ToDouble(Console.ReadLine());
-            double y1 = Convert.ToDouble(Console.ReadLine());
-            double x2 = Convert.ToDouble(Console.ReadLine());
-            double y2 = Convert.ToDouble(Console.ReadLine());
-            double distance = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+            double x = Math.Abs(x1 - x2), y = Math.Abs(y1 - y2);
+            return Convert.ToInt32(Math.Sqrt(x * x + y * y));
         }
     }
 }

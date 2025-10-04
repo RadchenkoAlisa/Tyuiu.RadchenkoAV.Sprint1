@@ -14,16 +14,24 @@ Console.WriteLine("* выполняет указанные расчёты и п�
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* ИСХОДНЫЕ ДАННЫЕ:                                                        *");
 Console.WriteLine("***************************************************************************");
-Console.Write("Введите координату x1: ");
-var x = double.Parse(Console.ReadLine());
-Console.WriteLine("Введите y:");
-var y = double.Parse(Console.ReadLine());
-Console.WriteLine("" + x);
-Console.WriteLine("" + y);
+
+Console.WriteLine("Введите X1:");
+double x1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите Y1:");
+double y1 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите X2:");
+double x2 = Convert.ToDouble(Console.ReadLine());
+
+Console.WriteLine("Введите Y2:");
+double y2 = Convert.ToDouble(Console.ReadLine());
 
 
 Console.WriteLine("***************************************************************************");
 Console.WriteLine("* РЕЗУЛЬТАТ:                                                              *");
 Console.WriteLine("***************************************************************************");
-Console.WriteLine($"*{ds.DistanceBetweenDots(x, y)}*");
+
+int res = Convert.ToInt32(ds.DistanceBetweenDots(x1, y1, x2, y2));
+Console.WriteLine(res);
 Console.ReadLine();
