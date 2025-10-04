@@ -17,6 +17,7 @@ namespace Tyuiu.RadchenkoAV.Sprint1.Task7.V30.Lib
             double z = firstPart + secondPart + thirdPart;
 
             return Math.Round(z, 3);
+
         }
     }
 }
